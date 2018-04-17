@@ -17,7 +17,7 @@ module.exports = {
     new UglifyJsPlugin({ sourceMap: true }),
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({
-      title: 'Ping Pong',
+      title: 'Template',
       template: './src/index.html',
       inject: 'body'
     })
@@ -49,7 +49,7 @@ module.exports = {
         options: {
           presets: ['es2015']
         }
-      }  
+      }
     ]
   }
 };
