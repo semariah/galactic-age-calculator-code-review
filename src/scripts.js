@@ -25,5 +25,9 @@ class Calculator {
     return venusAge;
   }
 
+  ageInMarsYear(age){
+    let marsAge = (Math.floor(age/1.88));
+    return marsAge;
 }
+
 export {Calculator};

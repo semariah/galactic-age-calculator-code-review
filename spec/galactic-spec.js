@@ -24,5 +24,11 @@ describe('Calculator', function(){
   it('should calculate the age of a person in venus years', function(){
     let calculator = new Calculator();
     expect(calculator.ageInVenusYear(20)).toEqual(32);
-  })
+  });
+
+  it('should calculate the age of a person in mars years', function(){
+    let calculator = new Calculator();
+    expect(calculator.ageInMarsYear(20)).toEqual(10);
+  });
+
 });
