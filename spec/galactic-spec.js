@@ -6,15 +6,12 @@ describe('Calculator', function(){
     expect(calculator.ageInSeconds(20)).toEqual(630720000);
   });
 
-  // it('should calculate the seconds between two days', function(){
-  //   let calculator = new Calculator();
-  //   let day1 = date(20, 4, 2017);
-  //   let day2 = date(21, 4, 2017);
-  //   // let diff = day1.getTime() - day2.getTime();
-  //   // let secondDiffrence = diff/1000;
-  //   // let diffrenceInSeconds = Math.abs(secondDiffrence);
-  //   expect(calculator.diffrenceInSeconds(day1, day2)).toEqual(86400);
-  // });
+  it('should calculate the seconds between two days', function(){
+    let calculator = new Calculator();
+    //let day1 = date(20, 4, 2017);
+    //let day2 = date(21, 4, 2017);
+     expect(calculator.diffrenceInSeconds("May 20, 2017 04:27:17", "May 21, 2017 04:27:17")).toEqual(86400);
+   });
 
   it('should calculate the age of a person in mercury years', function(){
     let calculator = new Calculator();
@@ -41,7 +38,16 @@ describe('Calculator', function(){
     let age = 20;
     let stress = "high";
     let smoke = "yes";
-    expect(calculator.lifeExpectancyPlant(age, stress, smoke, planet)).toEqual(166 + " years more on " + planet);
+    expect(calculator.lifeExpectancyPlanet(age, stress, smoke, planet)).toEqual(166);
+  });
+
+  it('should inform user if age is over the estimated life expectancy', function(){
+    let calculator = new Calculator();
+    let age = 100;
+    let stress = "low";
+    let smoke = "no";
+    let planet = "jupiter";
+    expect(calculator.lifeExpectancyPlanet(age, stress, smole, planet)).toEqual("you are past the eastimated, stay healthy!");
   });
 
 });
