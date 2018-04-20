@@ -22,7 +22,7 @@ describe('Calculator', function(){
   });
 
   it('should calculate the age of a person in venus years', function(){
-    let calculator = new Calcuator();
+    let calculator = new Calculator();
     expect(calculator.ageInVenusYear(20)).toEqual(32);
   })
 });
