@@ -45,13 +45,32 @@ export class Calculator {
         return "you are past the estimated, stay healthy!"
       }
     } else if (stress === "low" && smoke === "no" && planet === "mercury"){
-        const lifeExpect = 100;
-        if (age >= lifeExpect) {
-          let earthLeft = (lifeExpect - age);
-          return (Math.floor(earthLeft/0.24) + " years on " + planet);
-        } else {
-          return "you are past the estimated, stay healthy!";
-        }
+      const lifeExpect = 100;
+      if (age >= lifeExpect) {
+        let earthLeft = (lifeExpect - age);
+        return (Math.floor(earthLeft/0.24) + " years on " + planet);
+      } else {
+        return "you are past the estimated, stay healthy!";
+      }
+
+    } else if (stress === "high" && smoke === "yes" && planet === "venus"){
+      const lifeExpect = 60;
+      if(age <= lifeExpect) {
+        let earthLeft = (lifeExpect - age);
+        return (Math.floor(earthLeft/0.62) + " years on " + planet);
+      } else {
+        return "you are past the estimated, stay healthy!";
+      }
+    } else if (stress === "low" && smoke === "no" && planet === "venus"){
+      const lifeExpect = 100;
+      if(age <= lifeExpect) {
+        let earthLeft = (lifeExpect - age);
+        return (Math.floor(earthLeft/0.62) + " years on " + planet);
+      } else {
+        return "you are past the estimated, stay healthy!";
+      }
     }
+
+    
   }
 }
