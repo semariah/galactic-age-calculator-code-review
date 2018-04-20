@@ -20,7 +20,7 @@ _This web app will take user entered data such as age or a time span to calculat
 | A user enters their age in human years and it's calculated to Mars years | 20 Earth years  | 10 Mars years|
 | A user enters their age in human years and it's calculated to Jupiter years| 20 Earth years | 1.6 Jupiter Years|
 | User enters age and can determine their average life expectancy on each planet depending on country they live in and demographics| 20 Earth years old | Your expected to live for this many days on....|
-| If the user has surpassed their average life expectancy then account for that| 20 Earth years | 1.6 Jupiter Years|
+| If the user has surpassed their average life expectancy then account for that| 20 Earth years | 1 Jupiter Years(rounded number)|
 
 
 
