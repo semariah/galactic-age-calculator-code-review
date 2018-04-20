@@ -1,4 +1,4 @@
-class Calculator {
+export class Calculator {
   constructor () {
 
   }
@@ -28,6 +28,5 @@ class Calculator {
   ageInMarsYear(age){
     let marsAge = (Math.floor(age/1.88));
     return marsAge;
+  }
 }
-
-export {Calculator};
