@@ -33,7 +33,7 @@ describe('Calculator', function(){
 
   it('should calculate the age of a person in Jupiter years', function(){
     let calculator = new Calculator();
-    expect(calculator.ageInJupiterYear(20)).toEqual(1.6);
+    expect(calculator.ageInJupiterYear(20)).toEqual(1);
   });
 
 });
