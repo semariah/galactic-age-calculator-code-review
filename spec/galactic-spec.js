@@ -31,4 +31,9 @@ describe('Calculator', function(){
     expect(calculator.ageInMarsYear(20)).toEqual(10);
   });
 
+  it('should calculate the age of a person in Jupiter years', function(){
+    let calculator = new Calculator();
+    expect(calculator.ageInJupiterYear(20)).toEqual(1.6);
+  });
+
 });

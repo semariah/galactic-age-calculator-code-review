@@ -29,4 +29,9 @@ export class Calculator {
     let marsAge = (Math.floor(age/1.88));
     return marsAge;
   }
+
+  ageInJupiterYear(age){
+    let jupiterAge = (Math.floor(age/11.86));
+    return jupiterAge;
+  }
 }
