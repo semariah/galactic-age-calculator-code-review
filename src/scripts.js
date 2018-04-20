@@ -34,4 +34,24 @@ export class Calculator {
     let jupiterAge = (Math.floor(age/11.86));
     return jupiterAge;
   }
+
+  lifeExpectancyPlant(age, stress, smoke, planet) {
+    if (stress === "high" && smoke === "yes" && planet === "mercury"){
+      const lifeExpect = 60;
+      if(age <= lifeExpect) {
+        let earthLeft = (lifeExpect - age);
+        return (Math.floor(earthLeft/0.24) + " years on " + planet);
+      } else {
+        return "you are past the estimated, stay healthy!"
+      }
+    } else if (stress === "low" && smoke === "no" && planet === "mercury"){
+        const lifeExpect = 100;
+        if (age >= lifeExpect) {
+          let earthLeft = (lifeExpect - age);
+          return (Math.floor(earthLeft/0.24) + " years on " + planet);
+        } else {
+          return "you are past the estimated, stay healthy!";
+        }
+    }
+  }
 }

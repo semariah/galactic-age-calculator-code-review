@@ -36,4 +36,12 @@ describe('Calculator', function(){
     expect(calculator.ageInJupiterYear(20)).toEqual(1);
   });
 
+  it('should calculate how long a person has left to live in each planet based on smoking and stress levels', function(){
+    let Calculator = new Calculator();
+    let age = 20;
+    let stress = "high";
+    let smoke = "yes";
+    expect(calculator.lifeExpectancyPlant(age, stress, smoke, planet)).toEqual(166 + " years more on " + planet);
+  });
+
 });
