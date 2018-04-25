@@ -50,7 +50,7 @@ export class Calculator {
       } else if (age > 60){
         return "you are past the estimated, stay healthy!";
       }
-      
+
       // if (age <= 100) {
       //   let earthLeft = (lifeExpectancy - age);
       //   let mercuryLeft = Math.floor(earthLeft/0.24);
