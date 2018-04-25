@@ -43,17 +43,14 @@ export class Calculator {
   }
 
   lifeExpectancyPlanet(age) {
-    //if (planet === "mercury"){
-      //let lifeExpectancy = this.lifeExpectancy;
       if(age <= 60) {
         let earthLeft = (this.lifeExpectancy - age);
         let mercuryLeft = Math.floor(earthLeft/0.24);
-        return mercuryLeft; //(Math.floor(earthLeft/0.24) + " years on " + planet);
+        return mercuryLeft;
       } else if (age > 60){
         return "you are past the estimated, stay healthy!";
       }
-     //} else if (planet === "mercury"){
-      //const lifeExpect = 100;
+      
       // if (age <= 100) {
       //   let earthLeft = (lifeExpectancy - age);
       //   let mercuryLeft = Math.floor(earthLeft/0.24);
