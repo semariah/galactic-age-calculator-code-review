@@ -43,7 +43,7 @@ describe('Calculator', function(){
 
   it('should inform user if age is over the estimated life expectancy', function(){
     let calculator = new Calculator();
-    //let age = 100;
+    let age = 100;
     //let stress = "low";
     //let smoke = "no";
     //let planet = "jupiter";
