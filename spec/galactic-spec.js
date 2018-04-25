@@ -33,7 +33,7 @@ describe('Calculator', function(){
     expect(calculator.ageInJupiterYear(20)).toEqual(1);
   });
 
-  it('should calculate how long a person has left to live in each planet based on smoking and stress levels', function(){
+  it('should calculate how long a person has left to live in Mercury planet', function(){
     let calculator = new Calculator();
     let age = 20;
     expect(calculator.lifeExpectancyPlanet(age)).toEqual(166);
