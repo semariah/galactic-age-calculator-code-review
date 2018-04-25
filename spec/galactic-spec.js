@@ -36,18 +36,13 @@ describe('Calculator', function(){
   it('should calculate how long a person has left to live in each planet based on smoking and stress levels', function(){
     let calculator = new Calculator();
     let age = 20;
-    //let stress = "high";
-    //let smoke = "yes";
     expect(calculator.lifeExpectancyPlanet(age)).toEqual(166);
   });
 
   it('should inform user if age is over the estimated life expectancy', function(){
     let calculator = new Calculator();
     let age = 100;
-    //let stress = "low";
-    //let smoke = "no";
-    //let planet = "jupiter";
-    expect(calculator.lifeExpectancyPlanet(age)).toEqual("you are past the eastimated, stay healthy!");
+    expect(calculator.lifeExpectancyPlanet(age)).toEqual("you are past the estimated, stay healthy!");
   });
 
 });
