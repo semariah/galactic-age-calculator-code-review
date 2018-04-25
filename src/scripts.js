@@ -41,7 +41,7 @@ export class Calculator {
     return jupiterAge;
   }
 
-  lifeExpectancyPlanet(age, planet) {
+  lifeExpectancyPlanet(age) {
     //if (planet === "mercury"){
       //let lifeExpectancy = this.lifeExpectancy;
       if(age <= 60) {
