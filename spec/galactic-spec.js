@@ -8,8 +8,6 @@ describe('Calculator', function(){
 
   it('should calculate the seconds between two days', function(){
     let calculator = new Calculator();
-    //let day1 = date(20, 4, 2017);
-    //let day2 = date(21, 4, 2017);
      expect(calculator.diffrenceInSeconds("May 20, 2017 04:27:17", "May 21, 2017 04:27:17")).toEqual(86400);
    });
 
